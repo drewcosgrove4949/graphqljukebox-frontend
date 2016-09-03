@@ -1,0 +1,106 @@
+.searchBarContainer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inputBar {
+  width: 25em;
+  bottom: 0;
+  margin-top: 1.5em;
+  border: none;
+  outline-width: 0;
+  outline: none !important;
+  padding-left: 0.5em;
+  margin-right: 2em;
+  margin-bottom: 0.1em;
+  display: inline-block;
+}
+
+.inputBar input {
+  font-size: 2em;
+}
+
+.input-results {
+  z-index: 9999;
+  position: absolute;
+  margin: 0;
+  width: 24.5em;
+}
+
+@media (max-width:375px) {
+  .input-results {
+    width: 12.5em;
+  }
+  .inputBar input {
+    font-size: 1.5em;
+  }
+  .inputBar {
+    width: 13em;
+  }
+}
+
+.searchButton {
+  background-color: #0075ff;
+  display: inline-block;
+  border-radius: 5%;
+  color: #ffffff;
+  font-size: 1.25em;
+  padding-top: 0.8em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-bottom: 1em;
+  margin-top: 1.2em;
+}
+
+.searchButton:hover {
+  background-color: #00bbf2;
+}
+
+.input:focus {
+  outline: none !important;
+  outline-width: 0;
+}
+
+/* removes placeholder text when input is clicked */
+.inputBar:focus::-webkit-input-placeholder {
+  color:transparent;
+  outline:none !important;
+  outline-width: 0;
+}
+.inputBar:focus:-moz-placeholder {
+  color:transparent;
+  outline:none !important;
+  outline-width: 0;
+} /* Firefox 18- */
+.inputBar:focus::-moz-placeholder {
+  color:transparent;
+  outline:none !important;
+  outline-width: 0;
+  } /* Firefox 19+ */
+.inputBar:focus:-ms-input-placeholder {
+  color:transparent;
+  outline:none !important;
+  outline-width: 0;
+} /* oldIE ;) */
+
+.list-group-item a:hover {
+  text-decoration: none;
+}
+
+.list-group-item a {
+  color: black;
+  font-size: 1.3em;
+}
+
+.list-group-item:hover {
+  background-color: #4acaf0;
+}
+
+.list-group-item.active, .list-group-item.active:hover {
+  background-color: #4acaf0;
+  border-color: #4acaf0;
+}
+
+.form-control {
+  height: 2em;
+}
